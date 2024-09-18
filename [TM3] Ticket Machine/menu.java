@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// class TicketMachine ada di file yang berbeda
 public class menu{
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
