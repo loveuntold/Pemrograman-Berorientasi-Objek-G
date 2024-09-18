@@ -6,7 +6,6 @@ public class TicketMachine {
     public TicketMachine(int ticketcost){
         price = ticketcost;
         balance = 0;
-        // total = 0;
     }
 
     public int getPrice(){
@@ -32,7 +31,6 @@ public class TicketMachine {
             System.out.println("# Ticket");
             System.out.println("# " + price + " cents.");
             System.out.println("##################");
-            // total += price;
             balance -= price;
             System.out.println("Balance: " + balance + " cents.\n");
         } else {
