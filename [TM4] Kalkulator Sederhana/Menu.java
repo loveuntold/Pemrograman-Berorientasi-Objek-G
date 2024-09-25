@@ -24,7 +24,7 @@ public class Menu{
         System.out.println("3. Multiply (*)");
         System.out.println("4. Divide (/)");
 
-        System.out.print("Operation: ");
+        System.out.print("Operation (write the number): ");
         int choice = sc.nextInt();
 
         switch(choice){
