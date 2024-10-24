@@ -21,7 +21,6 @@ class Book{
         System.out.println("Publisher: " + publisher);
         System.out.println("Category: " + category);
     }
-
 }
 
 public class Main{
