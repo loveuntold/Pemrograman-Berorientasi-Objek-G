@@ -20,6 +20,21 @@ public class Main {
                 case 1:
                     System.out.println("\n");
 
+                    System.out.println("Jenis Kendaraan: ");
+                    System.out.println("1. Mobil");
+                    System.out.println("2. Motor");
+                    System.out.print("Pilih jenis kendaraan: ");
+                    int vehicleChoice = scanner.nextInt();
+                    scanner.nextLine();
+                    String jenis = "";
+                    if(vehicleChoice == 1){
+                        jenis = "Mobil";
+                    } else if(vehicleChoice == 2){
+                        jenis = "Motor";
+                    } else{
+                        System.out.println("Invalid vehicle type!");
+                        break;
+                    }
                     System.out.print("Merk: ");
                     String merk = scanner.nextLine();
                     System.out.print("Nama: ");
@@ -29,9 +44,7 @@ public class Main {
                     scanner.nextLine(); 
                     System.out.print("Warna: ");
                     String warna = scanner.nextLine();
-                    System.out.print("Jenis Kendaraan (Mobil/Motor): ");
-                    String jenis = scanner.nextLine();
-
+            
                     if(jenis.equals("Mobil")){
                         Mobil m = new Mobil(merk, nama, tahun, warna);
                         rs.addKendaraan(m);
@@ -50,7 +63,6 @@ public class Main {
                     System.out.print("Nama Penyewa: ");
                     String username = scanner.nextLine();
                 
-                    System.out.println("Kendaraan yang disewa: ");
                     rs.displayKendaraan();
                 
                     System.out.print("Pilih kendaraan: ");
